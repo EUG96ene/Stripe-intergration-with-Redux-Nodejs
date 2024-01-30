@@ -23,9 +23,9 @@ const Home = () => {
           <div className="products">
             {data &&
               data?.map((product) => (
-                <div key={product._id} className="product">
+                <div key={product.id} className="product">
                   <h3>{product.name}</h3>
-                  <img src={product.image?.url} alt={product.name} />
+                  <img src={product.image} alt={product.name} />
                   <div className="details">
                     <span>{product.desc}</span>
                     <span className="price">${product.price}</span>
